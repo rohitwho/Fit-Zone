@@ -1,0 +1,212 @@
+
+:root{
+    --navFont:hsl(0, 0%, 100%);
+    --navBack:hsl(0,0%,24%);
+    --firstLetter: hsl(43, 78%, 72%);
+}
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.Container{
+   display: none;
+  
+}
+.Label-Check {
+    display: flex;
+  }
+  
+  .hamburger-label {
+   
+    width: 70px;
+    height: 38px;
+    padding:0;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger-label div {
+    
+    width: 30px;
+    height: 2px;
+    /* margin: 10px; */
+    background-color: #fff;
+    position: absolute;
+    top: 1%;
+
+  }
+  
+  .line1 {
+    transition: all .3s;
+  }
+  
+  .line2 {
+    margin: 8px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  .line3 {
+    margin: 16px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  #Label-Check:checked + .hamburger-label .line1 {
+    transform: rotate(46deg) scaleX(.55) translate(39px, -3.5px);
+    border-radius: 50px 50px 50px 0;
+  
+  }
+  
+  #Label-Check:checked + .hamburger-label .line3 {
+    transform: rotate(-46deg) scaleX(.55) translate(39px, 3.5px);
+    border-radius: 0 50px 50px 50px;
+   
+  }
+  
+  #Label-Check:checked + .hamburger-label .line2 {
+  
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 0px;
+    
+  }
+
+.Primary-Header{
+    font-family:Raleway,sans-serif;
+    font-size:1rem;
+    display:flex;
+    justify-content:space-between;
+    background-color: var(--navBack);
+  
+}
+ h1::first-letter{
+color: var(--firstLetter);
+
+}
+.Primary-Header-Content{
+    font-size:1.2rem;
+    color: var(--navFont);
+    margin-Inline:10px;
+}
+.Primary-Navbar{
+   margin:14px;
+   font-weight: 400;
+}
+.Primary-Navbar-Link{
+    text-decoration: none;
+    color: var(--navFont);
+    margin-inline: 5px;
+}
+.Primary-Navbar-Link:hover{
+text-decoration:underline ;
+text-decoration-color: var(--firstLetter);
+text-underline-offset: 2px;
+}
+
+
+@media only screen and (max-width:800px){
+  
+    .Container{
+        display: flex;
+        
+       
+     }
+     .Label-Check {
+         display: none;
+         position: absolute;
+         top: 1%;
+         left: 92%;
+
+       }
+       
+       .hamburger-label {
+       
+         width: 70px;
+         height: 38px;
+         padding:0;
+         display: block;
+         cursor: pointer;
+       }
+       
+       .hamburger-label div {
+       
+         width: 30px;
+         height: 2px;
+         /* margin: 10px; */
+         background-color: #030303;
+         position: absolute;
+         top: 4%;
+         left: 90%;
+         z-index: 1;
+     
+       }
+       
+       .line1 {
+         transition: all .3s;
+       }
+       
+       .line2 {
+         margin: 8px 0 0 0;
+         transition: 0.3s;
+       }
+       
+       .line3 {
+         margin: 16px 0 0 0;
+         transition: 0.3s;
+       }
+       
+       #Label-Check:checked + .hamburger-label .line1 {
+         transform: rotate(46deg) scaleX(.55) translate(39px, -3.5px);
+         border-radius: 50px 50px 50px 0;
+       
+       }
+       
+       #Label-Check:checked + .hamburger-label .line3 {
+         transform: rotate(-46deg) scaleX(.55) translate(39px, 3.5px);
+         border-radius: 0 50px 50px 50px;
+        
+       }
+       
+       #Label-Check:checked + .hamburger-label .line2 {
+       
+         border-top-right-radius: 50px;
+         border-bottom-right-radius: 50px;
+         width: 0px;
+         
+       }
+       .Primary-Header{
+        background-color:transparent;
+       }
+       .Primary-Header-Content{
+        color: black;
+        height: 40px;
+       }
+
+       .Primary-Navbar[Data-Visible="false"]{
+        display:none;
+    }
+
+       .Primary-Navbar{
+        display: flex;
+        flex-direction: column;
+        padding: min(20vh,10rem) 2em;
+        background-color: skyblue;
+        backdrop-filter: blur (2rem);
+        transform: translateX(100%);
+        transform: translateX(0%);
+        transition:ease-in-out 500ms;
+       
+       }
+
+     .Primary-Navbar-Link{
+        color: black;
+       padding: 10px;
+       
+     }
+}
+    
