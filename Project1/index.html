@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="Primary-Header">
+        <div class="Primary-Header-Content">
+            <h1>FitZone</h1>
+        </div>
+        <div class="Container">
+            <input class="Label-Check" id="Label-Check" type="checkbox">
+            <label for="Label-Check" class="hamburger-label">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <label></label>
+            </label>
+        </div>
+
+        <nav class="Primary-Navbar" Aria-Expanded="false" Data-Visible="false">
+            <a href="/" class="Primary-Navbar-Link">Home</a>
+            <a href="/about" class="Primary-Navbar-Link">About</a>
+            <a href="/contact" class="Primary-Navbar-Link">Contact</a>
+            <a href="/privacy" class="Primary-Navbar-Link">Trainer</a>
+            <a href="/terms" class="Primary-Navbar-Link">Our Services.</a>
+
+        </nav>
+    </header>
+
+
+
+
+
+
+    <section class="Container">
+
+        <section class="Main-Section">
+            <label for="select-option">Choose Difficulty Level:</label>
+
+            <select name="levels" id="select-option" class="Dropdown">
+
+                <option value="beginner" selected>Beginner</option>
+                <option value="intermediate">Intermediate</option>
+
+
+            </select>
+            <label for="Exercise-Type">Exercise Type:</label>
+
+            <select name="levels" id="Exercise-Type" class="Dropdown">
+
+                <option value="cardio">Cardio</option>
+                <option value="olympic_weightlifting">Weightlifting</option>
+                <option value="powerlifting">Powerlifting</option>
+                <option value="strength" selected>Strength</option>
+                <option value="stretching">Stretching</option>
+                <option value="strongman">Strongman</option>
+
+            </select>
+
+            <label for="select-muscle">Target Specific Muscle Group:</label>
+
+            <select name="levels" id="select-muscle" class="Dropdown">
+
+                <option value="abdominals">Abdominals</option>
+                <option value="biceps">Bicepse</option>
+                <option value="calves">Calves</option>
+                <option value="chest" selected>Chest</option>
+                <option value="forearms">Forearms</option>
+                <option value="glutes">Glutes</option>
+                <option value="hamstrings">Hamstrings</option>
+                <option value="lats">Lats</option>
+                <option value="lower_back">Lower Back</option>
+                <option value="middle_back">Middle Back</option>
+                <option value="traps">Traps</option>
+                <option value="triceps">Triceps</option>
+
+            </select>
+
+        </section>
+
+
+
+        <section class="Main-Selection">
+
+            <button id="get-Selection" class="but" onclick="getInformation()">Search</button>
+            
+        </section>
+
+        <section id="Description">
+
+        </section>
+
+
+
+
+    </section>
+
+    <section class="Instruction-Content">
+
+        <aside class="Primary-Instruction">
+
+            <div id="Instruction"></div>
+
+        </aside>
+
+    </section>
+<div class="News">
+    <h2>NewYork Timez News</h2>
+</div>
+
+    <section class="Aside-Content">
+        
+
+        <aside class="card">
+
+        <div class="card-content"></div>
+
+        </aside>
+
+        <aside class="card">
+
+            <div class="card-content2"></div>
+
+        </aside>
+        <aside class="card">
+
+            <div class="card-content3"></div>
+
+        </aside>
+    </section>
+
+
+
+
+
+    <script src="./assets/app.js"></script>
+</body>
+
+</html>

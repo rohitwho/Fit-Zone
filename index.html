@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./Project1/assets/style.css">
+
     <title>FitZone</title>
 </head>
+
 <body>
     <header class="Primary-Header">
         <div class="Primary-Header-Content">
             <h1>FitZone</h1>
         </div>
-        <div class="Container" >  
-            <input class="Label-Check" id="Label-Check" type="checkbox" >
-              <label for="Label-Check" class="hamburger-label">
+        <div class="Container">
+            <input class="Label-Check" id="Label-Check" type="checkbox">
+            <label for="Label-Check" class="hamburger-label">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-              <label></label></label></div>
+                <label></label>
+            </label>
+        </div>
 
         <nav class="Primary-Navbar" Aria-Expanded="false" Data-Visible="false">
             <a href="/" class="Primary-Navbar-Link">Home</a>
-            <a href="/about" class="Primary-Navbar-Link">About</a>
+            <a href="" class="Primary-Navbar-Link">About</a>
             <a href="/contact" class="Primary-Navbar-Link">Contact</a>
             <a href="/privacy" class="Primary-Navbar-Link">Trainer</a>
             <a href="/terms" class="Primary-Navbar-Link">Our Services.</a>
@@ -30,12 +36,48 @@
         </nav>
     </header>
     <section class="hero">
-    
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquid quisquam<br> consequuntur unde praesentium, tenetur sapiente culpa cumque dolor nesciunt.</p>
+
+        <h1>Our Mission</h1>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquid quisquam<br>
+            consequuntur unde praesentium, tenetur sapiente culpa cumque dolor nesciunt.</p>
         <button class="Get-Started">Get Started</button>
     </section>
+
+    <section class="content">
+        <div class="container-workout">
+
+            <!-- <img class ="Upper-Image" src="https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" srcset=""> -->
+            <div class="Main-Workout">
+                <h1 class="Upper-Body">UpperBody Workout</h1>
+                <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                <button id="Started" class="Get-workout" onclick=" getWorkout()">Get-workout</button>
+            </div>
+        </div>
+        <div class="container-workout">
+
+            <!-- <img class ="Upper-Image" src="https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" srcset=""> -->
+            <div class="Main-Workout">
+                <h1 class="Upper-Body">LowerBody Workout</h1>
+                <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                <button class="Get-workout" onclick=" getWorkout()">Get-workout</button>
+            </div>
+        </div>
+        <div class="container-workout">
+            <!-- <img class ="Upper-Image" src="https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" srcset=""> -->
+            <div class="Main-Workout">
+                <h1 class="Upper-Body">Compound Lifts</h1>
+                <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                <button class="Get-workout" onclick=" getWorkout()">Get-workout</button>
+            </div>
+        </div>
+    
+    </section>
+
+
+
     <script src="./assets/app.js"></script>
-    <script src="./assets/images/"></script>
+    <script src="./Project1/assets/app.js"></script>
+
 </body>
+
 </html>

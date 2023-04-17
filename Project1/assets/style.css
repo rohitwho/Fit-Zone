@@ -11,14 +11,12 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
 
 }
 
-body {
+html {
   scroll-behavior: smooth;
-  transition: ease-in-out 200ms;
-  /* overflow: hidden; */
+  font-family: Raleway, sans-serif;
 }
 
 .Container {
@@ -27,7 +25,7 @@ body {
 }
 
 .Label-Check {
-  display: flex;
+  display: none;
 }
 
 .hamburger-label {
@@ -35,7 +33,7 @@ body {
   width: 70px;
   height: 38px;
   padding: 0;
-  display: block;
+  display: none;
   cursor: pointer;
 }
 
@@ -44,7 +42,7 @@ body {
   width: 30px;
   height: 2px;
 
-  background-color: var(--navFont);
+
   position: absolute;
   top: 1%;
 
@@ -64,19 +62,19 @@ body {
   transition: 0.3s;
 }
 
-#Label-Check:checked+.hamburger-label .line1 {
+#Label-Check:checked.hamburger-label .line1 {
   transform: rotate(46deg) scaleX(.55) translate(39px, -3.5px);
   border-radius: 50px 50px 50px 0;
 
 }
 
-#Label-Check:checked+.hamburger-label .line3 {
+#Label-Check:checked.hamburger-label .line3 {
   transform: rotate(-46deg) scaleX(.55) translate(39px, 3.5px);
   border-radius: 0 50px 50px 50px;
 
 }
 
-#Label-Check:checked+.hamburger-label .line2 {
+#Label-Check:checked.hamburger-label .line2 {
 
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -85,14 +83,13 @@ body {
 }
 
 .Primary-Header {
-  background-image: url("https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  background-attachment: fixed;
 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--navBack);
+
   overflow: hidden;
-  height: 100vh;
-  font-family: Raleway, sans-serif;
+  margin-bottom: 14px;
+
   font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
@@ -115,7 +112,7 @@ h1::first-letter {
 
   border-radius: 10px;
   height: 30px;
-  margin: 14px;
+  margin: 19px;
   font-weight: 400;
 }
 
@@ -131,203 +128,244 @@ h1::first-letter {
   text-underline-offset: 2px;
 }
 
-.hero h1 {
-  font-size: 2.2rem;
-  position: absolute;
-  color: var(--navFont);
-  top: 40%;
-  left: 10%;
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin-inline: 5%;
 }
 
-.para {
-  position: absolute;
-  font-size: 1.2rem;
-  color: var(--navFont);
-  top: 48%;
-  left: 10%;
-
+label {
+  display: inline-block;
+  margin-inline: 1%;
 }
 
+.Main-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 14px;
 
-
-.Get-Started {
-  position: absolute;
-  top: 58%;
-  left: 10%;
-  margin: 10px;
-  background: transparent;
-  border: 1px solid var(--navFont);
-  color: var(--navFont);
-  padding: 10px 30px;
-  border-radius: 4px;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.Get-Started:hover {
-  color: var(--navBack);
-}
-
-.Get-Started::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(249, 246, 246);
-
-  transform: translateX(-100%);
-  transition: ease-in-out .3s;
-  z-index: -1;
-}
-
-.Get-Started:hover::before {
-  transform: translateX(0);
+  height: 60px;
 
 }
 
-.paragraph {
-  font-size: 1.2rem;
-  padding: 4px;
-  line-break: auto;
+.search {
   background-color: var(--navBack);
+  border-radius: 14px;
   color: var(--navFont);
-}
-
-.content {
-  height: 80vh;
-  margin: 50px;
-
+  height: 100%;
+  width: 100%;
 
 }
 
-.container-workout {
-  background-image: url("/images/pexels-anush-gorak-1431282.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.Main-Selection {
+  display: inline-block;
+  margin-inline: 14px;
 
-  margin: 10px;
+}
+
+.but {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  width: 30%;
-  height: 40%;
-  border-radius: 10px;
-
-}
-
-.Main-Workout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  border-radius: 10px;
-
-}
-
-.Main-Workout:hover {
-
-  backdrop-filter: blur(6px);
-  transition: ease-in-out 400ms;
-}
-
-.Get-workout {
-  position: relative;
-  margin: 10px;
-  background: transparent;
-  border: 1px solid var(--navFont);
+  margin-inline: 14px;
+  background-color: var(--navBack);
+  border-radius: 10 px;
   color: var(--navFont);
   padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
-
-}
-
-.Get-workout:hover {
-  color: var(--navBack);
-}
-
-.Get-workout::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
+  /* height: 100%;*/
   width: 100%;
+
+}
+
+.but:hover {
+  background-color: transparent;
+  color: var(--navBack);
+  border: 1px solid var(--navBack);
+}
+
+
+
+#Description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px
+}
+
+#List-Item {
+
+  margin-inline: 14px;
   height: 100%;
-  background-color: rgb(249, 246, 246);
-
-  transform: translateX(-100%);
-  transition: ease-in-out .3s;
-  z-index: -1;
 }
 
-.Get-workout:hover::before {
-  transform: translateX(0);
-
-}
-
-.Upper-Body {
-  margin: 10px;
-  z-index: 1111;
+#List-Item li {
+  padding: 12px;
   color: var(--navFont);
+  list-style: decimal;
 }
 
-.Upper-text {
-  color: var(--navFont);
+
+
+
+
+.Instruction-Content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 4%;
+
+}
+.News{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  font-size: 1rem;
+  border-bottom: inset;
+  border-color: rgb(103, 104, 106);
+  ;
+}
+
+.Aside-Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  margin-inline: 14px;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  margin: 18px;
+
+  border-radius: 10px;
+  background-color: var(--navBack)
+}
+
+
+.card-title {
+  margin: 14px;
+  font-size: 18px;
+  color: var(--navFont);
 
 }
 
+.card-title-image {
+
+  padding: 12px;
+  width: 6%;
+  aspect-ratio: 1;
+}
+
+.card-title-image:hover {
+  scale: 1.1;
+
+
+}
+
+.Primary-Content {
+  display: flex;
+  flex-direction: column;
+  /* height: 43vh; */
+  /* align-items: start;
+  justify-content: start; */
+  background-color: var(--navBack);
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.9);
+
+}
+
+.Primary-Instruction {
+
+  flex: 1;
+  margin-right: 20px;
+
+  width: 50%;
+  background-color: var(--navBack);
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}
+
+#Instruction {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+
+  align-items: center;
+  justify-content: center;
+  color: var(--navFont);
+  word-spacing: 2px;
+  line-height: 22px;
+  word-wrap: break-word;
+  padding: 12px;
+
+
+}
+
+.Hyper-Link {
+  color: rgb(91, 144, 209);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1.5rem;
+
+}
+
+.Hyper-Link:hover {
+  border-bottom: inset;
+  border-color: rgb(91, 144, 209);
+  ;
+  scale: 1.1;
+}
+
+/* .Link{
+
+  width:2%;
+} */
+
+.Heading {
+  margin: 14px;
+}
+
+.Dropdown {
+  margin-inline: 20px;
+
+}
 
 @media only screen and (max-width:1000px) {
-  .hero h1 {
-    top: 30%;
+  .Container {
+    display: block;
+
   }
 
-  .Get-Started {
-    top: 40%;
-  }
-
-  .para {
-    top: 35%;
-  }
 }
 
 @media only screen and (max-width:800px) {
-
   .Container {
+    display: block;
+
+  }
+
+  .but {
     display: flex;
-    margin: 0;
-
-
+    justify-content: center;
+    align-items: center;
+    margin-inline: 14px;
   }
 
-  .hero h1 {
-    font-size: 1.8rem;
-    top: 43%;
-    left: 8%;
-
+  .Primary-Header-Content {
+    color: var(--navFont);
   }
 
-  .para {
-    font-size: 1em;
-    left: 8%;
-  }
 
-  .Get-Started {
-    top: 54%;
-    left: 7%;
-
-  }
 
   .Label-Check {
     display: none;
@@ -347,6 +385,7 @@ h1::first-letter {
     display: block;
     cursor: pointer;
 
+    z-index: 9999;
     margin-inline: 20px;
   }
 
@@ -354,7 +393,7 @@ h1::first-letter {
 
     width: 30px;
     height: 2px;
-
+    background: var(--navFont);
     position: absolute;
     top: 2%;
     left: 90%;
@@ -397,10 +436,11 @@ h1::first-letter {
   }
 
   .Primary-Header {
-    background-image: url("https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1600");
-    background-position: center;
-    object-fit: cover;
-    height: 100vh;
+
+    /* background: transparent; */
+    /* background-position:center;
+        object-fit: cover;
+        height: 100vh; */
 
   }
 
@@ -412,12 +452,13 @@ h1::first-letter {
 
   .Primary-Navbar {
     display: flex;
+    background: transparent;
     margin: 0;
-    z-index: 1111;
+
     flex-direction: column;
     margin: 10px;
     height: 80vh;
-    padding: min(18vh, 8rem) 1em;
+    padding: min(8vh, 2rem) 1em;
 
 
 
@@ -435,15 +476,21 @@ h1::first-letter {
   .Primary-Navbar-Link {
     /* color: black; */
     padding: 8px;
+    color: var(--navFont);
+
     font-size: 1.2em;
 
   }
 }
 
+@media only screen and (max-width:600px) {
+  .Primary-Navbar {}
+}
+
 @media only screen and (max-width:415px) {
   .Primary-Navbar {
-    height: 80vh;
-    transform: translateX(-15%);
+    width: 100%;
+    transform: translateX(-55%);
     padding: min(18vh, 3rem) 1em;
 
   }
@@ -482,7 +529,7 @@ h1::first-letter {
 
 @media only screen and (max-width:285px) {
   .Primary-Navbar {
-    transform: translateX(-85%);
+    transform: translateX(100%);
 
   }
 
