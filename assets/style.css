@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+:root{
+    --navFont:hsl(0, 0%, 100%);
+    --navBack:hsl(0,0%,24%);
+    --firstLetter: hsl(43, 78%, 72%);
+    --black:hsl(0, 0%, 0%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.Container{
+   display: none;
+  
+}
+.Label-Check {
+    display: flex;
+  }
+  
+  .hamburger-label {
+   
+    width: 70px;
+    height: 38px;
+    padding:0;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger-label div {
+    
+    width: 30px;
+    height: 2px;
+    
+    background-color: var(--navFont);
+    position: absolute;
+    top: 1%;
+
+  }
+  
+  .line1 {
+    transition: all .3s;
+  }
+  
+  .line2 {
+    margin: 8px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  .line3 {
+    margin: 16px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  #Label-Check:checked + .hamburger-label .line1 {
+    transform: rotate(46deg) scaleX(.55) translate(39px, -3.5px);
+    border-radius: 50px 50px 50px 0;
+  
+  }
+  
+  #Label-Check:checked + .hamburger-label .line3 {
+    transform: rotate(-46deg) scaleX(.55) translate(39px, 3.5px);
+    border-radius: 0 50px 50px 50px;
+   
+  }
+  
+  #Label-Check:checked + .hamburger-label .line2 {
+  
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 0px;
+    
+  }
+
+.Primary-Header{
+  background-image:url("https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: cover;
+overflow: hidden;
+  height: 100vh;
+    font-family:Raleway,sans-serif;
+    font-size:1.3rem;
+    display:flex;
+    justify-content:space-between;
+ 
+}
+ h1::first-letter{
+color: var(--firstLetter);
+
+}
+.Primary-Header-Content{
+    font-size:1.2rem;
+    color: var(--navFont);
+    margin:14px;
+}
+.Primary-Navbar{
+  backdrop-filter: blur(5rem);
+
+  border-radius: 10px;
+  height:30px;
+   margin:14px;
+   font-weight: 400;
+}
+.Primary-Navbar-Link{
+    text-decoration: none;
+    color: var(--navFont);
+    margin-inline: 5px;
+}
+.Primary-Navbar-Link:hover{
+text-decoration:underline ;
+text-decoration-color: var(--firstLetter);
+text-underline-offset: 2px;
+}
+
+.hero h1{
+  font-size:2.2rem;
+  position:absolute;
+  color:var(--navFont);
+  top:40%;
+  left:10%;
+}
+.para{
+  position:absolute;
+  font-size:1.2rem;
+  color:var(--navFont);
+  top:48%;
+  left:10%;
+
+}
+.Get-Started{
+  background-color:var(--navFont);
+  position:absolute;
+  font-size:1.2rem;
+  color: var(--black);
+  top:58%;
+  left:10%;
+ 
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+
+  border-style: solid;
+ 
+  border-color: rgba(255, 255, 255, 0.333);
+
+  padding: 14px 20px 12px 20px;
+ 
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px var(--firstLetter)
+}
+@media only screen and (max-width:1000px){
+  .hero h1{
+    top:30%;
+  }
+  .Get-Started{
+    top:40%;
+  }
+.para{
+  top:35%;
+}
+}
+
+@media only screen and (max-width:800px){
+  
+    .Container{
+        display: flex;
+     margin:0;
+        
+       
+     }
+     .hero h1{
+      font-size:1.8rem;
+      top:43%;
+      left:8%;
+
+     }
+     .para{
+      font-size:1em;
+      left:8%;
+     }
+     .Get-Started{
+      top:54%;
+      left:7%;
+
+     }
+
+     .Label-Check {
+         display: none;
+         position: absolute;
+         top: 3%;
+         left: 90%;
+         width: 2rem;
+         aspect-ratio: 1;
+
+       }
+       
+       .hamburger-label {
+       
+         width: 70px;
+         height: 38px;
+         padding:0;
+         display: block;
+         cursor: pointer;
+     
+         margin-inline:20px;
+       }
+       
+       .hamburger-label div {
+       
+         width: 30px;
+         height: 2px;
+
+         position: absolute;
+         top: 2%;
+         left: 90%;
+           z-index: 9999;
+     
+       }
+       
+       .line1 {
+         transition: all .3s;
+       }
+       
+       .line2 {
+         margin: 8px 0 0 0;
+         transition: 0.3s;
+       }
+       
+       .line3 {
+         margin: 16px 0 0 0;
+         transition: 0.3s;
+       }
+       
+       #Label-Check:checked + .hamburger-label .line1 {
+         transform: rotate(46deg) scaleX(.55) translate(39px, -3.5px);
+         border-radius: 50px 50px 50px 0;
+       
+       }
+       
+       #Label-Check:checked + .hamburger-label .line3 {
+         transform: rotate(-46deg) scaleX(.55) translate(39px, 3.5px);
+         border-radius: 0 50px 50px 50px;
+        
+       }
+       
+       #Label-Check:checked + .hamburger-label .line2 {
+       
+         border-top-right-radius: 50px;
+         border-bottom-right-radius: 50px;
+         width: 0px;
+         
+       }
+       .Primary-Header{
+        background-image:url("https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1600");
+        background-position:center;
+        object-fit: cover;
+        height: 100vh;
+   
+       }
+       
+
+       .Primary-Navbar[Data-Visible="false"]{
+        display:none;
+
+    }
+
+       .Primary-Navbar{
+        display: flex;
+        margin:0;
+        z-index: 1111;
+        flex-direction: column;
+        margin:10px;
+        height: 80vh;
+        padding: min(18vh,8rem) 1em;
+
+        
+    
+        backdrop-filter: blur(5rem);
+        
+       
+       }
+       .Primary-Navbar-Link:hover{
+        text-decoration:underline ;
+        text-decoration-color: var(--firstLetter);
+        text-underline-offset: 2px;
+        }
+      
+     .Primary-Navbar-Link{
+        /* color: black; */
+       padding: 8px;
+       font-size: 1.2em;
+       
+     }
+}
+    
+@media only screen and (max-width:415px){
+.Primary-Navbar{
+  height: 80vh;
+  transform: translateX(-15%);
+  padding: min(18vh,3rem) 1em;
+
+}
+ .hamburger-label div{
+  left:85%;
+}
+.Primary-Navbar-Link{
+  font-size: 1em;
+}
+.hero h1{
+  top:43%;
+  font-size: 1.5em;
+}
+.para{
+  top:50%;
+  font-size: 1em;
+
+}
+.Get-Started{
+  top:63%;
+  left:7%;
+ 
+}
+}
+@media only screen and (max-width:376px){
+  .Primary-Navbar{
+    transform: translateX(-29%);
+  }
+}
+@media only screen and (max-width:285px){
+  .Primary-Navbar{
+    transform: translateX(-85%);
+
+  }
+  .hero h1{
+
+  }
+  .para{
+top:53%;
+
+  }
+  .Get-Started{
+    top:69%;
+    left:7%
+  }
+}
