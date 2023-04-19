@@ -312,6 +312,55 @@ h1::first-letter {
   left:50%;
 }
 
+.footer-body{
+  background-color: darkgray;
+  
+}
+
+.card-footer{
+  padding: 0px !important;
+}
+
+.card-footer h5{
+  font-size: 20px;
+  padding: 5px;
+  color: var(--navFont);
+}
+
+.card-footer h6 {
+  font-size: 20px;
+  padding: 5px;
+  color: var(--navFont);
+}
+
+#instagram {
+  width:35px;
+  height: 35px;
+}
+
+#twitter {
+  width: 35px;
+  height: 35px;
+}
+
+#facebook {
+  width: 35px;
+  height: 35px;
+}
+
+.card-footer h7 {
+  font-size: 20px;
+  padding: 5px;
+  color: var(--navFont);
+}
+
+.footer-body a {
+  text-decoration: none !important;
+  color: var(--navFont);
+  padding: 5px;
+  justify-content: space-between;
+  line-height: 1.5;
+}
 
 @media only screen and (max-width:1000px) {
   .hero h1 {
