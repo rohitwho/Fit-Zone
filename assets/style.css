@@ -198,13 +198,15 @@ h1::first-letter {
 
 .content {
   height: 80vh;
+  /* background-color: darkgrey; */
+  /* width:80%; */
   margin: 50px;
 
 
 }
 
 .container-workout {
-  background-image: url("/images/pexels-anush-gorak-1431282.jpg");
+  background-image: url(".././images/pexels-anush-gorak-1431282.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -276,6 +278,7 @@ h1::first-letter {
 
 .Upper-Body {
   margin: 10px;
+
   z-index: 1111;
   color: var(--navFont);
 }
@@ -285,6 +288,28 @@ h1::first-letter {
   margin: 10px;
   font-size: 1rem;
 
+}
+.Logo-Main{
+  margin-inline: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+
+}
+.imageee {
+  /* flex:1; */
+  object-fit: contain;
+  width:40%;
+  height:100%;
+  margin: auto;
+ 
+
+  position: absolute;
+  top:100%;
+  left:50%;
 }
 
 
@@ -303,7 +328,17 @@ h1::first-letter {
 }
 
 @media only screen and (max-width:800px) {
+  .content {
+    display: flex;
+    background-color: darkgrey;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
 
+.Logo-Main{
+  display: none;
+}
   .Container {
     display: flex;
     margin: 0;
@@ -437,6 +472,15 @@ h1::first-letter {
     padding: 8px;
     font-size: 1.2em;
 
+  }
+  .Upper-Body{
+    font-size:16px;
+  }
+  .Upper-text{
+    font-size:12px;
+  }
+  .Get-workout{
+    padding:5px 10px;
   }
 }
 

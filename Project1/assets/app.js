@@ -28,7 +28,7 @@ checkChecked.addEventListener("click",isChecked );
 function getWorkout(){
     const anotherPage = "./Project1/index.html";
     document.location.replace(anotherPage);
-    getInformation();
+
 }
 
 
