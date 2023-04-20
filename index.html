@@ -1,41 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+ 
+
     <title>FitZone</title>
 </head>
+
 <body>
     <header class="Primary-Header">
         <div class="Primary-Header-Content">
             <h1>FitZone</h1>
         </div>
-        <div class="Container" >  
-            <input class="Label-Check" id="Label-Check" type="checkbox" >
-              <label for="Label-Check" class="hamburger-label">
+        <div class="Container">
+            <input class="Label-Check" id="Label-Check" type="checkbox">
+            <label for="Label-Check" class="hamburger-label">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-              <label></label></label></div>
+                <label></label>
+            </label>
+        </div>
 
         <nav class="Primary-Navbar" Aria-Expanded="false" Data-Visible="false">
             <a href="/" class="Primary-Navbar-Link">Home</a>
-            <a href="/about" class="Primary-Navbar-Link">About</a>
+            <a href="" class="Primary-Navbar-Link">About</a>
             <a href="/contact" class="Primary-Navbar-Link">Contact</a>
             <a href="/privacy" class="Primary-Navbar-Link">Trainer</a>
             <a href="/terms" class="Primary-Navbar-Link">Our Services.</a>
 
         </nav>
     </header>
-    <section class="hero">
+        <section class="hero">
+
+            <h1>Our Mission</h1>
+            <p class="para">"As a company we want to provide users with a simple guide on which muscle<br>groups are targetted, the difficulty level and type of training system being used"</p>
+            <button class="Get-Started">Get Started</button>
+        </section>
+
+
+
+
+
+        <section class="content">
+            <div class="container-workout">
+
+                
+                <div class="Main-Workout">
+                    <h1 class="Upper-Body">UpperBody Workout</h1>
+                    <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                    <button id="Started" class="Get-workout" onclick=" getWorkout()">Get-workout</button>
+                </div>
+            </div>
+            <div class="container-workout">
+
+                
+                <div class="Main-Workout">
+                    <h1 class="Upper-Body">LowerBody Workout</h1>
+                    <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                    <button class="Get-workout" onclick=" getWorkout()">Get-workout</button>
+                </div>
+            </div>
+            <div class="container-workout">
+                
+                <div class="Main-Workout">
+                    <h1 class="Upper-Body">Compound Lifts</h1>
+                    <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                    <button class="Get-workout" onclick=" getWorkout()">Get-workout</button>
+                </div>
+            </div>
+            
+        </section>
+      
+
+
+
+        <section class="Testimonials">
+            <div class="container-testimonials">
+                <h2 class="Quotes">&#10077; Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatem impedit cupiditate aliquam voluptas similique laboriosam, quidem ratione neque accusantium? &#10078;</h2>
+            </div>
+   
+            <div class="Sign"><h3 class="Signature">-John Smith</h3></div>
+            
+        </section>
+        
+
+   <footer class="Primary-Footer">
+        
+            <div class="footer-column">
+                <ul>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">GET HELP</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Book a Class</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Find Training Programs</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">On Demand Workouts</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Payment Options</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
     
-        <h1>Our Mission</h1>
-        <p class="para">"As a company we want to provide users with a simple <br> guide on which muscle groups are targetted, difficulty level  <br> and </p>
-        <button class="Get-Started">Get Started</button>
-    </section>
+                </ul>
+            </div>
+            <div class="footer-column1">
+                <ul>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">ABOUT US</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">The FitZone Standard</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Become a Member.</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Rewards & Contest</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+    
+                </ul>
+            </div>
+            <div class="footer-column1">
+                <ul>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">CARRERS</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Become a trainer</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Become an instructor</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Join our team</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Learn about benefits</a>
+                        <span class="footer-link-underline"></span>
+                    </li>
+    
+                </ul>
+            </div>
+            <div class="News-Letter">
+                <h2 class ="footer-letter">Connect With us!</h2>
+                <p>Sign-up to our mailing list for advanced notice of Sales,exclusive deals,and more!</p>
+                <input type="email" class ="email" placeholder="EMAIL ADDRESS">
+                
+                <button class="signup">Sign-up</button>
+                <div class="Socials">
+                    <a href="#"> <img class ="Socials-Png" src="./images/twitter2.png" alt="" srcset=""></a>
+                    <a href="#"><img class ="Socials-Png" src="./images/facebook.png" alt="" srcset=""></a>
+                   
+                    <a href="#"><img class ="Socials-Png" src="./images/IG.png.webp" alt="" srcset=""></a>
+
+                </div>
+            </div>
+
+    
+    
+    
+   
+    </footer> 
+    
+   
+      
+
+
+    <!-- <footer class="card-footer">
+        <div class="footer-body">
+        
+            <div class="row">
+              <div class="col">
+                <h5>SERVICES</h5>
+                <div class="col-12"><a href="/BMI">BMI Calculator</a>
+                </div>
+                <div class="col-12"><a href="/nutrition">Nutrition</a>
+                </div>
+                <div class="col-12"><a href="/physicalactivity">Physical Activity Guidelines</a>
+                </div>
+              </div>
+              <div class="col">
+                <h6>FOLLOW</h6> 
+                <div class="col-12"><a href="Instagram">
+                    <img src="./images/IG.png.webp" alt="instagram-icon" id="instagram"/>
+                </a>
+                </div>
+                <div class="col-12"><a href="/Twitter">
+                    <img src="./images/twitter2.png" alt="twitter-icon" id="twitter"/>
+                </a>
+                </div>
+                <div class="col-12"><a href="/Facebook">
+                    <img src="./images/facebook.png" alt="facebook-icon" id="facebook"/>
+                </a>
+                </div>
+              </div>
+              <div class="col">
+                <h7>ABOUT</h7> 
+                <div class="col-12"><a href="/About-Us">About Us</a>
+                </div>
+                <div class="col-12"><a href="/Success-stories">Success Story</a>
+                </div>
+                <div class="col-12"><a href="/Mission">Our Mission</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer> -->
+<!--         
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   -->
     <script src="./assets/app.js"></script>
-    <script src="./assets/images/"></script>
+    <script src="./Project1/assets/app.js"></script>
+
 </body>
+
 </html>
