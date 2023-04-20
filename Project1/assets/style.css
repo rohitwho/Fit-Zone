@@ -326,11 +326,6 @@ label {
   scale: 1.1;
 }
 
-/* .Link{
-
-  width:2%;
-} */
-
 .Heading {
   margin: 14px;
 }
@@ -338,6 +333,93 @@ label {
 .Dropdown {
   margin-inline: 20px;
 
+}
+.Primary-Footer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+align-items: center;
+
+  background-color: var(--navBack);
+    
+  width:100%;
+}
+.footer-column {
+  display: inline-block;
+  margin: 20px;
+  
+  font-size: 15px;
+}
+.footer-column a{
+  
+  text-decoration: none;
+  color: #b3b3b3;
+ 
+}
+.footer-column li{
+  list-style: none;
+  padding: 8px;
+} 
+
+
+.footer-column1{
+  display: inline-block;
+  
+  margin: 20px;
+  font-size: 15px;
+
+
+  
+
+
+}
+.footer-column1 a{
+text-decoration: none;
+color: #b3b3b3; 
+
+}
+.footer-item   a{
+  color:var(--navFont);
+
+  font-size: large;
+ 
+}
+.footer-column1 li{
+  list-style: none;
+  padding: 8px;
+} 
+.News-Letter{
+  display: block;
+ float:right;
+margin-inline:29px;
+  
+}
+.footer-letter {
+
+  color: var(--navFont);
+  margin-bottom: 5px;
+  font-size:larger;
+
+}
+p{
+  color: #928e8e;
+}
+.email{
+  padding: 5px 20px;
+
+}
+.signup{
+  margin: 19px;
+  padding: 6px 20px;
+  color:#070707;
+  background-color:var(--navFont);  
+  border:0;
+  border-radius: 4px;
+}
+.Socials-Png{
+  width:2rem;
+  aspect-ratio: 1;
 }
 
 @media only screen and (max-width:1000px) {

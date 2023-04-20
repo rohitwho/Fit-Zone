@@ -17,8 +17,10 @@
 
 body {
   scroll-behavior: smooth;
+  font-family: Raleway, sans-serif;
   transition: ease-in-out 200ms;
-  /* overflow: hidden; */
+    background-color: darkgrey;
+ 
 }
 
 .Container {
@@ -92,7 +94,7 @@ body {
   background-size: cover;
   overflow: hidden;
   height: 100vh;
-  font-family: Raleway, sans-serif;
+ 
   font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
@@ -131,6 +133,7 @@ h1::first-letter {
   text-underline-offset: 2px;
 }
 
+
 .hero h1 {
   font-size: 2.2rem;
   position: absolute;
@@ -145,6 +148,7 @@ h1::first-letter {
   color: var(--navFont);
   top: 48%;
   left: 10%;
+  backdrop-filter: blur(6px);
 
 }
 
@@ -197,28 +201,36 @@ h1::first-letter {
 }
 
 .content {
-  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+  height:700px ;
   /* background-color: darkgrey; */
-  /* width:80%; */
-  margin: 50px;
+  width:100%;
+  inset: 5% 0;
+  
 
 
 }
 
 .container-workout {
+
   background-image: url(".././images/pexels-anush-gorak-1431282.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
-  margin: 10px;
+  margin: 8px;
+  /* padding: 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  width: 30%;
-  height: 40%;
+  width: 25%;
+  height: 100%;
   border-radius: 10px;
 
 }
@@ -226,16 +238,18 @@ h1::first-letter {
 .Main-Workout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+    justify-content: center;
+    align-items: center;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 
 }
 
 .Main-Workout:hover {
 
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
+
   transition: ease-in-out 400ms;
 }
 
@@ -245,7 +259,8 @@ h1::first-letter {
   background: transparent;
   border: 1px solid var(--navFont);
   color: var(--navFont);
-  padding: 10px 20px;
+  padding: 10px 70px;
+  /* padding:10px; */
   border-radius: 4px;
   cursor: pointer;
   overflow: hidden;
@@ -295,12 +310,11 @@ h1::first-letter {
   align-items: flex-end;
   justify-content: flex-end;
 
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
+  
 
 }
 .imageee {
-  /* flex:1; */
+
   object-fit: contain;
   width:40%;
   height:100%;
@@ -311,8 +325,118 @@ h1::first-letter {
   top:100%;
   left:50%;
 }
+.Primary-Footer{
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+align-items: center;
 
-.footer-body{
+  background-color: var(--navBack);
+    
+  width:100%;
+}
+.footer-column {
+  display: inline-block;
+  margin: 20px;
+  
+  font-size: 15px;
+}
+.footer-column a{
+  
+  text-decoration: none;
+  color: #b3b3b3;
+ 
+}
+.footer-column li{
+  list-style: none;
+  padding: 8px;
+} 
+
+
+.footer-column1{
+  display: inline-block;
+  
+  margin: 20px;
+  font-size: 15px;
+
+
+  
+
+
+}
+.footer-column1 a{
+text-decoration: none;
+color: #b3b3b3; 
+
+}
+.footer-item   a{
+  color:var(--navFont);
+
+  font-size: large;
+ 
+}
+.footer-column1 li{
+  list-style: none;
+  padding: 8px;
+} 
+.News-Letter{
+  display: block;
+ float:right;
+margin-inline:29px;
+  
+}
+.footer-letter {
+
+  color: var(--navFont);
+  margin-bottom: 5px;
+  font-size:larger;
+
+}
+p{
+  color: #928e8e;
+}
+.email{
+  padding: 5px 20px;
+
+}
+.signup{
+  margin: 19px;
+  padding: 6px 20px;
+  color:#070707;
+  background-color:var(--navFont);  
+  border:0;
+  border-radius: 4px;
+}
+.Socials-Png{
+  width:2rem;
+  aspect-ratio: 1;
+}
+.Testimonials{
+  display: flex;
+  inset:5% ; 
+  margin-top:50px;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+  width:100%;
+  height:350px;
+  background-color: var(--navFont)
+}
+.container-testimonials{
+
+  width:50%;
+}
+.Sign{
+  display: flex;
+  margin:20px;
+  position: relative;
+  top:0;
+  right:20%;
+
+}
+/* .footer-body{
   background-color: darkgray;
   
 }
@@ -360,7 +484,7 @@ h1::first-letter {
   padding: 5px;
   justify-content: space-between;
   line-height: 1.5;
-}
+} */
 
 @media only screen and (max-width:1000px) {
   .hero h1 {
@@ -379,7 +503,7 @@ h1::first-letter {
 @media only screen and (max-width:800px) {
   .content {
     display: flex;
-    background-color: darkgrey;
+    /* background-color: darkgrey; */
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
@@ -565,7 +689,14 @@ h1::first-letter {
     left: 7%;
 
   }
+  .Testimonials{
+font-size: 10px;
+  }
+  .Sign{
+    right:18%;
+  }
 }
+
 
 @media only screen and (max-width:376px) {
   .Primary-Navbar {
