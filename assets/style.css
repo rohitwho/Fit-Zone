@@ -95,7 +95,7 @@ select {
 }
 
 .Label-Check {
-  display: flex;
+  display: none;
 }
 
 .hamburger-label {
@@ -103,7 +103,7 @@ select {
   width: 70px;
   height: 38px;
   padding: 0;
-  display: block;
+  display: none;
   cursor: pointer;
 }
 
@@ -153,15 +153,8 @@ select {
 }
 
 .Primary-Header {
-  /* background-image: url("https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1600"); */
-  /* background-attachment: fixed; */
   background-color: var(--navBack);
-
-  /* background-repeat: no-repeat;
-  background-size: cover; */
-  overflow: hidden;
-  /* height: 100vh; */
-  
+  overflow: hidden;  
   font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
@@ -193,11 +186,6 @@ h1::first-letter {
 }
 
 .Primary-Navbar {
-  /* backdrop-filter: blur(5rem); */
-  /* text-transform: uppercase; */
-
-  /* border-radius: 10px; */
-  /* height: 30px; */
   margin: 14px;
   font-weight: 400; 
 }
@@ -287,7 +275,6 @@ h1::first-letter {
 .About-Us {
   display: flex;
   flex-wrap: wrap;
-  /* height:300px;  */
   margin: 10px 0px 0px 0px;
   border-bottom: inset;
   justify-content: space-around;
@@ -354,7 +341,6 @@ h1::first-letter {
   align-items: center;
 
   height: 700px;
-  /* background-color: darkgrey; */
   width: 100%;
   inset: 5% 0;
 
@@ -369,7 +355,6 @@ h1::first-letter {
   background-size: cover;
   background-attachment: fixed;
   margin: 8px;
-  /* padding: 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,7 +390,6 @@ h1::first-letter {
   border: 1px solid var(--navFont);
   color: var(--navFont);
   padding: 10px 70px;
-  /* padding:10px; */
   border-radius: 4px;
   cursor: pointer;
   overflow: hidden;
@@ -541,7 +525,7 @@ q {
 
 
 
-
+/*------------------*/
 
 .Sign {
   display: flex;
@@ -554,19 +538,14 @@ q {
 .Group-Serv {
   margin: 20px 100px 20px 100px;
   border-radius: 10px;
-  /* border:1px solid black; */
-  /* background-color: var(--navFont); */
   color: var(--navFont);
 }
 
 .Services {
   display: flex;
-  /* flex-direction: row; */
-
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  /* max-width:100%; */
 
 }
 
@@ -591,9 +570,7 @@ q {
 }
 
 .Price-Section {
-  /* display: inline-block; */
   justify-content: flex-start;
-  /* align-items: flex-start; */
   background-color: var(--navBack);
   display: flex;
   border: 1px solid var(--navBack);
@@ -601,9 +578,7 @@ q {
   padding: 10px;
   border-radius: 10px;
   flex-direction: column;
-  /* border-right: inset; */
   text-align: start;
-  /* padding-bottom: 1rem; */
 
 }
 
@@ -731,7 +706,6 @@ p {
 }
 
 .Contact-us-Content {
-  /* display: inline-block; */
   background-color: hsl(220.41deg 19.37% 50.39%);
   height: 100vh;
 }
@@ -739,9 +713,9 @@ p {
   text-align: center;
   margin: 10px;
 }
-.Contact-us-Title{
+/* .Contact-us-Title{
 
-}
+} */
 input[type=text],
 select,
 textarea {
@@ -749,7 +723,6 @@ textarea {
   padding: 10px ;
   border: 1px solid #ccc;
   border-radius: 4px;
- 
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -758,18 +731,14 @@ textarea {
 .Submit-Form{
   display: flex;
  justify-content: center;
-  
   background:transparent;
- 
   padding: 12px 40px;
   border: 1px solid white;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* .Submit-Form:hover {
-  background-color: #3f3f3f;
-} */
+
 
 .container {
  display:flex;
@@ -830,7 +799,211 @@ align-items: center;
 }
 
 
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
+  padding: 0;
+  margin-inline: 5%;
+}
+
+label {
+  display: inline-block;
+  margin-inline: 1%;
+}
+
+.Main-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 14px;
+
+  height: 60px;
+
+}
+
+.search {
+  background-color: var(--navBack);
+  border-radius: 14px;
+  color: var(--navFont);
+  height: 100%;
+  width: 100%;
+
+}
+
+.Main-Selection {
+  display: inline-block;
+  margin-inline: 14px;
+
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 14px;
+  background-color: var(--navBack);
+  border-radius: 10 px;
+  color: var(--navFont);
+  padding: 10px 20px;
+  /* height: 100%;*/
+  width: 100%;
+
+}
+
+.but:hover {
+  background-color: transparent;
+  color: var(--navBack);
+  border: 1px solid var(--navBack);
+}
+
+
+
+#Description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px
+}
+
+#List-Item {
+
+  margin-inline: 14px;
+  height: 100%;
+}
+
+#List-Item li {
+  padding: 12px;
+  color: var(--navFont);
+  list-style: decimal;
+}
+
+
+
+
+
+.Instruction-Content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 4%;
+
+}
+.News{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-bottom: inset;
+  border-color: rgb(103, 104, 106);
+  ;
+}
+
+.Aside-Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  margin-inline: 14px;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  margin: 18px;
+
+  border-radius: 10px;
+  background-color: var(--navBack)
+}
+
+
+.card-title {
+  margin: 14px;
+  font-size: 18px;
+  color: var(--navFont);
+
+}
+
+.card-title-image {
+
+  padding: 12px;
+  width: 6%;
+  aspect-ratio: 1;
+}
+
+.card-title-image:hover {
+  scale: 1.1;
+
+
+}
+
+.Primary-Content {
+  display: flex;
+  flex-direction: column;
+  /* height: 43vh; */
+  /* align-items: start;
+  justify-content: start; */
+  background-color: var(--navBack);
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.9);
+
+}
+
+.Primary-Instruction {
+
+  flex: 1;
+  margin-right: 20px;
+
+  width: 50%;
+  background-color: var(--navBack);
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}
+
+#Instruction {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+
+  align-items: center;
+  justify-content: center;
+  color: var(--navFont);
+  word-spacing: 2px;
+  line-height: 22px;
+  word-wrap: break-word;
+  padding: 12px;
+
+
+}
+
+.Hyper-Link {
+  color: rgb(91, 144, 209);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1.5rem;
+
+}
+
+.Hyper-Link:hover {
+  border-bottom: inset;
+  border-color: rgb(91, 144, 209);
+  ;
+  scale: 1.1;
+}
+
+.Heading {
+  margin: 14px;
+}
+
+.Dropdown {
+  margin-inline: 20px;
+
+}
 
 @media only screen and (max-width:1000px) {
   .hero h1 {
