@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <!-- <link rel="stylesheet" href="../assets/style.css"> -->
-    <title>FitZone</title>
+    <title>Contact FitZone</title>
+
 </head>
 
 <body>
@@ -27,117 +27,76 @@
 
         <nav class="Primary-Navbar" Aria-Expanded="false" Data-Visible="false">
             <a href="/" class="Primary-Navbar-Link">Home</a>
-            <a href="/about" class="Primary-Navbar-Link">About</a>
-            <a href="/contact" class="Primary-Navbar-Link">Contact</a>
+            <a href="" class="Primary-Navbar-Link">About</a>
+            <a href="./Contact.html" class="Primary-Navbar-Link">Contact</a>
             <a href="/privacy" class="Primary-Navbar-Link">Trainer</a>
             <a href="/terms" class="Primary-Navbar-Link">Our Services</a>
 
         </nav>
     </header>
 
+    <section class="Contact-us">
+        <div class="Contact-us-image">
+            <img class="Float-Left"
+                src="https://images.pexels.com/photos/4348633/pexels-photo-4348633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="" srcset="">
+        </div>
+       
+        <div class="Contact-us-Content">
 
+            <div class="Contact-us-Title">
+                <h2 class ="center">Contact Form</h2>
+            </div>
 
+            <div data-visible="true"class="container">
+                <form >
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada" selected>Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
 
-    <section class="Container">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:150px"></textarea>
 
-        <section class="Main-Section">
-            <label for="select-option">Difficulty Level:</label>
+                   <button  class="Submit-Form">Submit</button>
 
-            <select name="levels" id="select-option" class="Dropdown">
+                        <!-- <input type="submit" value="Submit"> -->
+                </form>
+                
 
-                <option value="beginner" selected>Beginner</option>
-                <option value="intermediate">Intermediate</option>
-
-
-            </select>
-            <label for="Exercise-Type">Exercise Type:</label>
-
-            <select name="levels" id="Exercise-Type" class="Dropdown">
-
-                <option value="cardio">Cardio</option>
-                <option value="olympic_weightlifting">Weightlifting</option>
-                <option value="powerlifting">Powerlifting</option>
-                <option value="strength" selected>Strength</option>
-                <option value="stretching">Stretching</option>
-                <option value="strongman">Strongman</option>
-
-            </select>
-
-            <label for="select-muscle">Muscle Group:</label>
-
-            <select name="levels" id="select-muscle" class="Dropdown">
-
-                <option value="abdominals">Abdominals</option>
-                <option value="biceps">Biceps</option>
-                <option value="calves">Calves</option>
-                <option value="chest" selected>Chest</option>
-                <option value="forearms">Forearms</option>
-                <option value="glutes">Glutes</option>
-                <option value="hamstrings">Hamstrings</option>
-                <option value="lats">Lats</option>
-                <option value="lower_back">Lower Back</option>
-                <option value="middle_back">Middle Back</option>
-                <option value="traps">Traps</option>
-                <option value="triceps">Triceps</option>
-
-            </select>
-
-        </section>
-
-
-
-        <section class="Main-Selection">
-
-            <button id="get-Selection" class="but" onclick="getInformation()">Search</button>
+                
+                
+            </div>
+            <section data-visible="false" class="Thank-You-Modal">
+                <div class="modal">
+                    <div class="modal-content">
+                        <img src="./images/check.png" alt="" srcset="">
+                        <h2>Thank you</h2> 
+                    </div>
+    
+                    <div class="Thanks-Page">Your Enquiry Has Been Submitted.Have A Good Day.</div>
+                    <a href="./index.html" class="Go-Back">&#10005; Close</a>
+                </div>
+            </section>
             
-        </section>
-
-        <section id="Description">
-
-        </section>
-
-
-
-
-    </section>
-
-    <section class="Instruction-Content">
-
-        <aside class="Primary-Instruction">
-
-            <div id="Instruction"></div>
-
-        </aside>
-
-    </section>
-<div class="News">
-    <h2>NewYork Timez News</h2>
-</div>
-
-    <section class="Aside-Content">
+        </div>
+       
         
-
-        <aside class="card">
-
-        <div class="card-content"></div>
-
-        </aside>
-
-        <aside class="card">
-
-            <div class="card-content2"></div>
-
-        </aside>
-        <aside class="card">
-
-            <div class="card-content3"></div>
-
-        </aside>
     </section>
+
+
+
     <footer class="Primary-Footer">
-        
+
         <div class="footer-column">
             <ul>
                 <li class="footer-item">
@@ -153,7 +112,7 @@
                     <span class="footer-link-underline"></span>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Training Program</a>
+                    <a href="#" class="footer-link">Training Programs</a>
                     <span class="footer-link-underline"></span>
                 </li>
                 <li>
@@ -174,7 +133,7 @@
                     <span class="footer-link-underline"></span>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Rewards & Contests</a>
+                    <a href="#" class="footer-link">Rewards & Contest</a>
                     <span class="footer-link-underline"></span>
                 </li>
                 <li>
@@ -214,16 +173,16 @@
             </ul>
         </div>
         <div class="News-Letter">
-            <h2 class ="footer-letter">Connect With Us!</h2>
+            <h2 class="footer-letter">Connect With Us!</h2>
             <p>Sign-up for our newsletter to get sneak peaks of sales, exclusive deals, and more!</p>
-            <input type="email" class ="email" placeholder="Email Address">
-            
+            <input type="email" class="email" placeholder="Email Address">
+
             <button class="signup">Sign-up</button>
             <div class="Socials">
-                <a href="#"><img class ="Socials-Png" src="../images/facebook.png" alt="" srcset=""></a>
-                <a href="#"><img class ="Socials-Png" src="../images/IG.png.webp" alt="" srcset=""></a>
-                <a href="#"> <img class ="Socials-Png" src="../images/twitter2.png" alt="" srcset=""></a>
-                <a href="#"><img class ="Socials-Png" src="../images/youtube.jpeg" alt="" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/facebook.png" alt="" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/IG.png.webp" alt="" srcset=""></a>
+                <a href="#"> <img class="Socials-Png" src="./images/twitter2.png" alt="" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/youtube.jpeg" alt="" srcset=""></a>
 
             </div>
         </div>
@@ -232,13 +191,9 @@
 
 
 
-</footer> 
+    </footer>
+    <script src="./Project1/assets/app.js"></script>
 
-
-
-
-
-    <script src="./assets/app.js"></script>
 </body>
 
 </html>

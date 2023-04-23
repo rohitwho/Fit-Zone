@@ -407,6 +407,7 @@ p{
 }
 .email{
   padding: 5px 20px;
+  border-radius: 5px;
 
 }
 .signup{
@@ -420,6 +421,7 @@ p{
 .Socials-Png{
   width:2rem;
   aspect-ratio: 1;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width:1000px) {
