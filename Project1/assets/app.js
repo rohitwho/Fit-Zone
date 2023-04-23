@@ -86,7 +86,7 @@ function getInformation() {
         }
     };
 
-    var enterThis = ""
+    var enterThis = "";
     var type = exerciseType;
     var muscle = muscleSelected;
     var difficulty = selectedValue;
@@ -201,24 +201,6 @@ fetch('https://ny-times-news-titles-and-urls.p.rapidapi.com/news', newsOptions)
             createA.appendChild(createImg);
             foodTitle.appendChild(createA);
         })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     })
 
