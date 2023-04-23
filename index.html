@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- <link rel="stylesheet" href="assets/card-style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./assets/style.css">
+    <title>FitZone</title>
+</head>
+
+<body>
+    <header class="Primary-Header">
+        <div class="Primary-Header-Content">
+            <a class ="Logo-Main" href = "/">FitZone</a>
+        </div>
+        <div class="Container">
+            <input class="Label-Check" id="Label-Check" type="checkbox">
+            <label for="Label-Check" class="hamburger-label">
+                <div class="line1"></div>   
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <label></label>
+            </label>
+        </div>
+
+        <nav class="Primary-Navbar" Aria-Expanded="false" Data-Visible="false">
+            <!-- <a href="/" class="Primary-Navbar-Link">Home</a> -->
+            <a href="#About" class="Primary-Navbar-Link">About</a>
+            <a href="./Contact.html" class="Primary-Navbar-Link">Contact</a>
+            <a href="/privacy" class="Primary-Navbar-Link">Trainer's</a>
+            <a href="#Main-Cards" class="Primary-Navbar-Link">Services</a>
+            <a href="#About" class="Primary-Navbar-Link">My FitZone</a>
+
+        </nav>
+    </header>
+    <section class="hero">
+        <img  Data-Visible="true" class="Main-Background" src="./images/Background.jpg" alt="">
+        <h1>Our Mission</h1>
+        <p class="para">At FitZone, our mission is to inspire and empower people to<br>achieve their fitness goals and
+            lead healthier, more active lives.</p>
+        <a href="#Main-con" class="Get-Started">Get Started</a>
+    </section>
+
+    <section id ="Main-con"class="content">
+        <div class="container-workout">
+
+
+            <div class="Main-Workout">
+                <h1 class="Upper-Body">Upper Body Workout</h1>
+                <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                <a href="./Project.html" onclick="getInformation()" id="Started" class="Get-workout" >Get Workout</a>
+            </div>
+        </div>
+        <div class="container-workout">
+
+
+            <div class="Main-Workout">
+                <h1 class="Upper-Body">Lower Body Workout</h1>
+                <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                <a href="./Project.html" class="Get-workout" >Get Workout</a>
+            </div>
+        </div>
+        <div class="container-workout">
+
+            <div class="Main-Workout">
+                <h1 class="Upper-Body">Compound Lifts</h1>
+                <p class="Upper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, provident.</p>
+                <a  href="./Project.html" class="Get-workout" >Get Workout</a>
+            </div>
+        </div>
+
+    </section>
+    <section>
+   
+
+
+    <section id ="About" class="About-Us">
+        <div class="About-Us-Container">
+            <h2 class="About-H">About us</h2>
+            <p class="About-Para">Welcome to <strong> FitZone</strong>! As a brand who's passionate about fitness, we
+                want to create a platform that makes it easy for people of all fitness levels to achieve their health
+                and wellness goals. Whether you’re looking to lose weight, build muscle, or simply improve your overall
+                fitness, our website offers a variety of workouts and training programs to help you get there. With a
+                focus on personalized training, our programs are tailored specifically to your needs and goals.
+                Join us on this journey towards a healthier, happier you, and let’s start crushing those fitness goals
+                together!</p>
+
+        </div>
+        <img class="Diverse"
+            src="https://img.freepik.com/premium-photo/fitness-workout-group-team-people-happy-portrait-good-training-exercise-gym-class-session-diverse-sports-friends-man-woman-face-together-health-wellness-body-strength_590464-78765.jpg"
+            alt="" class="A Team of people smiling.">
+    </section>
+    <section class="Our-Goals">
+        <img class="Goals"
+            src="https://images.pexels.com/photos/7625043/pexels-photo-7625043.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="A group of people giving fist bump" srcset="">
+        <div class="Our-Goals-Container">
+            <h2 class="About-H">Our Goals</h2>
+            <p class="About-Para"><strong> FitZone</strong> aims to provide effective workout programs tailored to each
+                user’s needs and goals, while building a strong online community of fitness enthusiasts. We strive to
+                continually improve and expand our offerings based on user feedback and emerging trends, and provide
+                users with a variety of resources to help them reach their full potential. Our ultimate goal is to
+                inspire and empower our users to take charge of their health and wellness, and lead happier, more
+                fulfilling lives</p>
+
+        </div>
+
+    </section>
+ <!-- this is the card section-->
+   
+  
+    <section id="Main-Cards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col d-flex justify-content-center">
+                <div class="card rounded-3d">
+                    <img src="./images/pexels-edgar-santos-t-14252111.jpg" class="card-img" alt="Card background image">
+                    <!-- <img src="images/DB RDL.jpeg" class="card-img-top position-absolute top-0 start-0 transition-300ms"
+                        alt="Card hover image"> -->
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title f d-flex  justify-content-center">BMI Calculator</h5>
+                        <p class="card-text">Your BMI (Body Mass Index) is a calculation that is used to determine if a person is overweight that applies to both adult men and women.</p>
+                        <a href="#" class="btn btn-primary btn-block mt-auto">Find Out?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card rounded-3d">
+                    <img src="https://images.pexels.com/photos/3820441/pexels-photo-3820441.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img" alt="Card background image">
+                    <!-- <img src="images/DB RDL.jpeg" class="card-img-top position-absolute top-0 start-0 transition-300ms"
+                        alt="Card hover image"> -->
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title d-flex  justify-content-center">Body Fat Calculator</h5>
+                        <p class="card-text">Physical activity is anything that gets your body moving. Each week adults need 150 minutes of moderate-intensity physical activity and 2 days of muscle strengthening activity</p>
+                        <a href="#" class="btn btn-primary btn-block mt-auto">Find Out?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card rounded-3d">
+                    <img src="./images/pexels-eduardo-romero-1886487.jpg" class="card-img" alt="Card background image">
+                    <!-- <img src="images/DB RDL.jpeg" class="card-img-top position-absolute top-0 start-0 transition-300ms"
+                        alt="Card hover image"> -->
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title d-flex  justify-content-center"> Ideal Weight Calculator</h5>
+                        <p class="card-text">Nutrition is about eating a healthy and balanced diet. Food and drink provide the energy and nutrients you need to be healthy.</p>
+                        <a href="#" class="btn btn-primary btn-block mt-auto">Find Out?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!---->
+   
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <q>The last three or four reps is what makes the muscle grow. This area of pain divides a champion from
+                    someone who is not a champion.</q>
+                <p class="author">- Arnold Schwarzenegger</p>
+            </div>
+
+            <div class="mySlides">
+                <q>You must expect great things of yourself before you can do them.</q>
+                <p class="author">- Michael Jordan</p>
+            </div>
+
+            <div class="mySlides">
+                <q>We hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life
+                    as a champion.</q>
+                <p class="author">- Muhammad Ali</p>
+            </div>
+
+            <div class="mySlides">
+                <q>If you want something you’ve never had, you must be willing to do something you’ve never done.</q>
+                <p class="author">- Thomas Jefferson</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <section class="Group-Serv">
+        <section class="Services">
+            <!-- <h3>Plans and all</h3> -->
+            <div class="Price-Section">
+                <div class="Price-Title">
+
+                    <h1 class="Upper-Body">Free</h1>
+
+                </div>
+                <div class="Price-Content">
+                    <span>$</span>0.00
+                    <span>/mo</span>
+                </div>
+                <div class="List-Item">
+                    <ul>
+                        <li> &#10004 FREE Consultation</li>
+                        <!-- <li> &#10004  Free Consultaion to coaches</li>
+                <li>&#10004 Access to the Community</li> -->
+                    </ul>
+                </div>
+                <button class="Get-workout">Access Now</button>
+            </div>
+            <div class="Price-Section">
+                <div class="Price-Title">
+
+                    <h1 class="Upper-Body">Basic Plan</h1>
+
+                </div>
+                <div class="Price-Content">
+                    <span>$</span>9.99
+                    <span>/mo</span>
+                </div>
+                <div class="List-Item">
+                    <ul>
+                        <li> &#10004 Consultation</li>
+                        <li> &#10004 Access to the Community</li>
+                        <li> &#10004 1 Personal Training Session (1hr)</li>
+
+                    </ul>
+
+                </div>
+                <button class="Get-workout">Access Now</button>
+            </div>
+            <div class="Price-Section">
+                <div class="Price-Title">
+
+                    <h1 class="Upper-Body">Premium Plan</h1>
+
+                </div>
+                <div class="Price-Content">
+                    <span>$</span>19.99
+                    <span>/mo</span>
+                </div>
+                <div class="List-Item">
+                    <ul>
+                        <li> &#10004 Consultation & Assessment</li>
+                        <li> &#10004 Access to the Community</li>
+                        <li> &#10004 3 Personal Training Session (1hr)</li>
+                        <li>&#10004 Access to Virtual Group Class</li>
+                    </ul>
+                </div>
+                <button class="Get-workout">Access Now</button>
+            </div>
+            <div class="Price-Section">
+                <div class="Price-Title">
+
+                    <h1 class="Upper-Body">Pro Plan</h1>
+
+                </div>
+                <div class="Price-Content">
+                    <span>$</span>24.99
+                    <span>/mo</span>
+                </div>
+                <div class="List-Item">
+                    <ul>
+                        <li> &#10004 Consultation & Assessment</li>
+                        <li> &#10004 Access to the Community</li>
+                        <li> &#10004 3 Personal Training Session (1hr)</li>
+                        <li>&#10004 Access to Virtual Group Clasess</li>
+                        <li>&#10004 Free Fitness Merchandises.</li>
+                    </ul>
+                </div>
+                <button class="Get-workout">Access Now</button>
+            </div>
+        </section>
+    </section>
+
+
+    <footer class="Primary-Footer">
+
+        <div class="footer-column">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">MEMBERSHIP</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Join Now</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Book a Class</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Training Programs</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">My FitZone</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-column1">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">ABOUT US</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">The FitZone Standard</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Rewards & Contest</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="./Contact.html" class="footer-link">Contact Us</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-column1">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">CAREERS</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Join Our Team</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Become a Trainer</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Become an Instructor</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Learn About Benefits</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="News-Letter">
+            <h2 class="footer-letter">Connect With Us!</h2>
+            <p>Sign-up for our newsletter to get sneak peaks of sales, exclusive deals, and more!</p>
+            <input type="email" class="email" placeholder="Email Address">
+
+            <button class="signup">Sign-up</button>
+            <div class="Socials">
+                <a href="#"><img class="Socials-Png" src="./images/facebook.png" alt="Facebook-Logo" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/IG.png.webp" alt="Instagram-Logo" srcset=""></a>
+                <a href="#"> <img class="Socials-Png" src="./images/twitter2.png" alt="Twitter-Logo" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/youtube.jpeg" alt="Youtube-Logo" srcset=""></a>
+
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+    <script src="./assets/app.js"></script>
+    <!-- <script src="./Project1/assets/app.js"></script> -->
+
+</body>
+
+</html>
