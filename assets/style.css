@@ -187,12 +187,18 @@ h1::first-letter {
 
 }
 
-.Primary-Header-Content {
-  font-size: 1.2rem;
+.Logo-Main {
+  font-size: 2rem;
   color: var(--navFont);
   margin-inline: 10px;
+  text-decoration: none;
 
 }
+.a::first-letter {
+  color: var(--firstLetter);
+
+}
+
 
 .Primary-Navbar {
   margin: 14px;
@@ -239,23 +245,29 @@ h1::first-letter {
   border: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease-out;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
+  /* transform-style: preserve-3d;
+  backface-visibility: hidden; */
   border-radius: 20px;
+ 
+
 }
 .card-img{
   height:100%
 }
 
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+ 
   
 }
 
 .card-title, .card-text{
-  color: var(--text-color) !important;
+  color: var(--navFont  ) !important;
+  backdrop-filter: blur(6px);
 }
+
 
 
 .btn-primary {
@@ -269,7 +281,11 @@ h1::first-letter {
 
 .btn-primary:hover {
   box-shadow: inset 400px 0 0 0 var(--button-hover-color) !important;
+  color: var(--navBack);
   /* color:var(--text-hover-color) !important; */
+}
+a:hover {
+  color: var(--navFont);
 }
 
 .Get-Started {
@@ -333,7 +349,7 @@ h1::first-letter {
 }
 
 .About-H {
-
+border:none;
   margin: 10px;
   border-bottom: inset;
 
@@ -388,9 +404,9 @@ h1::first-letter {
   justify-content: center;
   align-items: center;
 
-  height: 700px;
+  height: 600px;
   width: 100%;
-  inset: 5% 0;
+  margin-bottom:10px;
 
 
 
@@ -402,9 +418,9 @@ h1::first-letter {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin: 8px;
+  margin: 4px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 25%;
@@ -416,6 +432,7 @@ h1::first-letter {
 .Main-Workout {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -470,7 +487,7 @@ h1::first-letter {
 
 .Upper-Body {
   margin: 10px;
-
+font-size: 24px;
   z-index: 1111;
   color: var(--navFont);
 }
@@ -1065,6 +1082,14 @@ label {
   .para {
     top: 35%;
   }
+  .Goals {
+
+    width: 50%;
+  }
+
+  .Diverse {
+    width: 50%;
+  }
 
   /* .Our-Goals{
     display: flex;
@@ -1244,6 +1269,10 @@ label {
   .Get-workout {
     padding: 5px 10px;
   }
+  .About-Us-Container {
+    width: 90%;
+  }
+ 
 
   .Goals {
 
@@ -1256,6 +1285,7 @@ label {
 
   .Our-Goals-Container {
     margin-bottom: 10px;
+    width: 90%;
   }
 
 }
