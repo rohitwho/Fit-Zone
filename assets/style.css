@@ -9,6 +9,12 @@
 
 --ff-Primary: Raleway, sans-serif;
 --ff-Secondary:'DynaPuff', cursive ;
+
+--button-color: transparent;
+--button-border-color: white;
+--button-hover-color: rgb(249, 246, 246);
+--text-color: white; 
+--text-hover-color: #545454;
 }
 
 /* Box sizing rules */
@@ -87,6 +93,9 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   } */
+
+ 
+ 
 
 
 .Container {
@@ -222,7 +231,46 @@ h1::first-letter {
 
 }
 
+.card {
+  width: 300px;
+  margin: 20px 80px 20px 80px  !important;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.card-img{
+  height:100%
+}
 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+  
+}
+
+.card-title, .card-text{
+  color: var(--text-color) !important;
+}
+
+
+.btn-primary {
+  background-color: var(--button-color) !important;
+  border-color: var(--button-border-color) !important;
+  -webkit-transition: ease-out 0.4s !important;
+  -moz-transition: ease-out 0.4s !important;
+  transition: ease-out 0.4s !important;
+}
+
+
+.btn-primary:hover {
+  box-shadow: inset 400px 0 0 0 var(--button-hover-color) !important;
+  /* color:var(--text-hover-color) !important; */
+}
 
 .Get-Started {
   position: absolute;
