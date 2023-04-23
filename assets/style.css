@@ -188,13 +188,13 @@ h1::first-letter {
 }
 
 .Logo-Main {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: var(--navFont);
   margin-inline: 10px;
   text-decoration: none;
 
 }
-.a::first-letter {
+.Logo-Main::first-letter {
   color: var(--firstLetter);
 
 }
@@ -499,7 +499,7 @@ font-size: 24px;
 
 }
 
-.Logo-Main {
+/* .Logo-Main {
   margin-inline: 10px;
   display: flex;
   align-items: flex-end;
@@ -507,7 +507,7 @@ font-size: 24px;
 
 
 
-}
+} */
 
 /* Slideshow container */
 .slideshow-container {
@@ -864,14 +864,14 @@ align-items: center;
 }
 
 
-.Container {
+.Container-Project{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
-  padding: 0;
+  padding: 10px;
   margin-inline: 5%;
 }
 
@@ -1091,36 +1091,17 @@ label {
     width: 50%;
   }
 
-  /* .Our-Goals{
-    display: flex;
 
-    align-items: center;
-    justify-content: center;
-  } */
-  /* .Goals{
-    
-    width:30%;
-  } */
-  /* .Diverse{
-    display: flex;
-    width:30%;
-    align-items: center;
-    justify-content: center;
-  } */
 }
 
 @media only screen and (max-width:800px) {
   .content {
     display: flex;
-    /* background-color: darkgrey; */
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
   }
 
-  .Logo-Main {
-    display: none;
-  }
+  
 
   .Container {
     display: flex;
@@ -1138,6 +1119,7 @@ label {
 
   .para {
     font-size: 1em;
+    top: 49%;
     left: 8%;
   }
 
@@ -1211,16 +1193,10 @@ label {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     width: 0px;
-    /* background-image: url("https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1600"); */
+  
   }
 
-  /* .Primary-Header {
-      
-        background-position: center;
-        object-fit: cover;
-        height: 100vh;
-
-      } */
+ 
 
 
   .Primary-Navbar[Data-Visible="false"] {
@@ -1230,19 +1206,12 @@ label {
 
   .Primary-Navbar {
     display: flex;
-
     margin: 0;
-    /* z-index: 1111; */
     flex-direction: column;
     margin: 10px;
     height: 80vh;
     padding: min(18vh, 8rem) 1em;
-
-
-
     backdrop-filter: blur(5rem);
-
-
   }
 
   .Primary-Navbar-Link:hover {
@@ -1252,7 +1221,7 @@ label {
   }
 
   .Primary-Navbar-Link {
-    /* color: black; */
+  
     padding: 8px;
     font-size: 1.2em;
 
