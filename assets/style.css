@@ -711,6 +711,14 @@ q {
   padding: 8px;
 }
 
+.footer-column a:hover{
+  color: hsl(43, 78%, 72%)
+}
+
+.footer-column1 a:hover{
+  color: hsl(43, 78%, 72%)
+}
+
 .News-Letter {
   display: block;
   float: right;
@@ -753,6 +761,10 @@ p {
   width: 2rem;
   aspect-ratio: 1;
   border-radius: 5px;
+}
+
+.Socials-Png:hover{
+  transform: translateY(-5px);
 }
 
 /*------------------------*/
@@ -1067,6 +1079,59 @@ label {
 
 .Dropdown {
   margin-inline: 20px;
+
+}
+
+
+/*----------COMING SOON----------------*/
+.Soon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+  .Coming-Soon h2 {
+    text-decoration: underline;
+    }
+
+.Coming-Soon{
+  display: flex;
+  background-color: hsl(220.41deg 19.37% 50.39%);
+  height:50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  border-radius: 10px;
+  margin:50px;  
+  width:47%;
+
+ 
+}
+.Hour-Glass{
+  width:6rem;
+  margin:30px;
+  aspect-ratio: 1;
+}
+.Soon-Text{
+margin-inline: 10%;
+color: var(--black);
+padding:4px;
+font-size: 20px;
+font-weight: 600;
+
+}
+
+.Sign-Up-Here{
+  text-decoration: none;
+  border:1px solid Black;
+padding:10px 30px;
+  margin-top:30px;
+  color: var(--black);
+  /* text-align: center; */
+  border-radius: 8px;
+  font-weight: 600;
 
 }
 
