@@ -52,7 +52,7 @@ THEN I am redirected to a page with the calculator to input my gender and height
 
 ## Contributors
 
-Rohit Nayer - rohitwho
+Rohit Nayyar - rohitwho
 (Link: https://github.com/rohitwho)
 
 Muhammad Atrach - ThatOneMHMD
