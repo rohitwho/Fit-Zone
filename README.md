@@ -10,7 +10,11 @@ This is the official page for FitZone, the best workout guide. When the LIVE URL
 
 ## Screenshots of official FitZone website
 
--Enter ScreenShot links HERE!-
+![fitZone landing page](https://user-images.githubusercontent.com/126360257/234116109-fb34d4b4-dbdc-49fa-9473-1a27b22fb3d3.png)
+![fitZone 2](https://user-images.githubusercontent.com/126360257/234116138-15fa8e50-bf6a-4ec7-a81c-0a3518f17414.png)
+![fitZone 3](https://user-images.githubusercontent.com/126360257/234116153-791af7b3-3ae8-44a2-8514-da8cea247d3d.png)
+![fitZone 4](https://user-images.githubusercontent.com/126360257/234116167-8e96b1be-74f7-4062-a25f-9c8f00934b5c.png)
+![fitZone 5](https://user-images.githubusercontent.com/126360257/234116183-91827f3d-f402-416c-9659-6a8efc27c86a.png)
 
 ## User Story
 
