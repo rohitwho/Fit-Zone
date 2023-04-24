@@ -1,0 +1,563 @@
+:root {
+  --navFont: hsl(0, 0%, 100%);
+  --navBack: hsl(0, 0%, 24%);
+  --firstLetter: hsl(43, 78%, 72%);
+  --black: hsl(0, 0%, 0%);
+  --yellow: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #555;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.BMI-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.BMI-card {
+  font-family: sans-serif;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--yellow);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-image: url("https://img.freepik.com/vetores-gratis/design-de-fundo-escuro-abstrato-luxo-linhas-douradas_1017-24789.jpg?w=1380&t=st=1682265346~exp=1682265946~hmac=d53720df9baf042f77c5113c6c7edf77c66802069907777aa6ce4dc7d743563c");
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px;
+  font-size: 24px;
+}
+
+
+.BMI-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  margin-right: 10px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  color: var(--black);
+  background-color: var(--yellow);
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--yellow);
+  color: var(--black);
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#result p {
+  color: var(--yellow);
+}
+
+.gender-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.gender-container label {
+  margin-right: 10px;
+}
+
+.gender-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gender-picker input[type="radio"] {
+  display: none;
+}
+
+.gender-picker .gender-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--firstLetter);
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+  color: var(--black);
+
+}
+
+.gender-picker input[type="radio"]:checked + label .gender-icon {
+  background-color: var(--black);
+  border-color: var(--firstLetter);
+  color: var(--yellow);
+  background-color: var(--firstLetter);
+}
+
+.gender-picker .gender-label {
+  font-size: 16px;
+  color: var(--yellow);
+}
+
+.gender-picker label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.BMI-hero{
+  background-image: url("http://127.0.0.1:5502/images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.hero {
+
+  font-size: 2.2rem;
+  position: absolute;
+  color: var(--navFont);
+  top: 10%;
+  left: 10%;
+  width: 560px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  position: absolute;
+  color: var(--navFont);
+  top: calc(200px - 175px);
+  left: calc(10% - 20px);
+  z-index: 1;
+}
+
+.email {
+  padding: 5x 20px;
+  margin-right: 10px;
+  width: 209px;
+  height: 25px;
+  border: none;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signup {
+
+  height: 25px;
+  font-size:14px ;
+}
+
+@media only screen and (max-width: 2000px) {
+  .BMI-card {
+
+    width: 45%;
+
+
+  }
+
+  .hero {
+
+    width: 700px;
+
+  }
+
+  label {
+
+    font-size: 24px;
+
+  }
+
+  .BMI-container h1 {
+
+    font-size: 38px;
+    font-weight: bold;
+
+  }
+
+  .BMI-container{
+
+    width: 100%;
+  }
+
+  .BMI-form{
+
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+  .hero {
+
+    width: 600px;
+  }
+
+  label, #result {
+
+    font-size: 18px;
+
+  }
+
+  #result p{
+
+    font-size: 16px;
+  }
+
+  .BMI-container h1 {
+
+    font-size: 28px;
+    font-weight: bold;
+
+  }
+
+  .BMI-card {
+
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+  }
+
+  .hero {
+
+    width: 80%;
+  }
+
+  .BMI-container{
+
+    width: 100%;
+  }
+
+  .BMI-form{
+
+    width: 100%;
+  }
+
+  .Primary-Footer{
+
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+  html{
+
+    width: 100%;
+  }
+
+  .body{
+
+    width: 100%;
+  }
+
+  .BMI-card {
+
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+
+  }
+
+  .hero {
+    font-size: 2.2rem;
+    position: absolute;
+    color: var(--navFont);
+    top: 10%;
+    left: 0;
+    width: 100%;
+  }
+  
+
+  .BMI-container{
+
+    width: 100%;
+  }
+
+  .BMI-container h1 {
+
+    font-size: 24px;
+    font-weight: bold;  
+
+  }
+
+
+  .BMI-form{
+
+    width: 100%;
+  }
+
+  .Primary-Footer{
+
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  html{
+
+    width: 100%;
+  }
+
+  .body{
+
+    width: 100%;
+  }
+
+  .BMI-card {
+
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+  }
+
+  .hero {
+    font-size: 2.2rem;
+    position: absolute;
+    color: var(--navFont);
+    top: 10%;
+    left: 0;
+    width: 100%;
+  }
+  
+
+  .BMI-container{
+
+    width: 100%;
+  }
+
+  label {
+
+    font-size: 16px;
+
+  }
+
+  .BMI-container h1 {
+
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  select{
+
+    width: 50px;
+    font-size: 16px;
+  }
+
+  input {
+
+    width: 50px;
+    font-size: 16px;
+  }
+
+  .BMI-card button {
+
+    font-size: 16px;
+    text-align: center;
+
+  }
+
+  #result{
+
+    font-size: 16px;
+  }
+
+  .BMI-form{
+
+    width: 100%;
+  }
+
+  .Primary-Footer{
+
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+
+  html{
+
+    width: 100%;
+  }
+
+  .body{
+
+    width: 100%;
+  }
+
+  .BMI-card {
+
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+  }
+
+  .hero {
+    font-size: 2.2rem;
+    position: absolute;
+    color: var(--navFont);
+    top: 6%;
+    left: 0;
+    width: 100%;
+
+  }
+  
+
+  .BMI-container{
+
+    width: 100%;
+  }
+
+  label {
+
+    font-size: 12px;
+
+  }
+
+  .gender-container{
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .BMI-container h1 {
+
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  select{
+
+    width: 50px;
+    font-size: 10px;
+  }
+
+  input {
+
+    width: 40px;
+    font-size: 10px;
+  }
+
+  select {
+
+    width: 40px;
+    font-size: 10px;
+
+  }
+
+  .BMI-card button {
+
+    font-size: 14px;
+    text-align: center;
+
+
+  }
+
+  #result{
+
+    font-size: 12px;
+
+  }
+
+  .BMI-form{
+
+    width: 100%;
+  }
+
+  .Primary-Footer{
+
+    margin-top: 300px;
+  }
+}
