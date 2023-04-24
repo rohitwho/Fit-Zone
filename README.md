@@ -50,6 +50,13 @@ THEN I am redirected to a page with a Body Fat Calculator to input my weight and
 WHEN I click the “Learn More” button for the Ideal Weight Calculator
 THEN I am redirected to a page with the calculator to input my gender and height to receive an output of an ideal weight
 
+## APIs used
+
+- Fitness Calculator
+- Fitness by ninja
+- New York Timez
+- Youtube
+
 ## Contributors
 
 Rohit Nayyar - rohitwho
