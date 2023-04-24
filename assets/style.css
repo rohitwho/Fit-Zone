@@ -1070,6 +1070,57 @@ label {
 
 }
 
+
+/*----------COMING SOON----------------*/
+.Soon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+
+}
+.Coming-Soon{
+  display: flex;
+  background-color: hsl(220.41deg 19.37% 50.39%);
+  height:50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  border-radius: 10px;
+  margin:50px;  
+  width:50%;
+
+ 
+}
+.Hour-Glass{
+  width:6rem;
+  margin:40px;
+  aspect-ratio: 1;
+}
+.Soon-Text{
+margin-inline: 10%;
+color: var(--black);
+padding:4px;
+font-size: 20px;
+font-weight: 600;
+
+}
+
+.Sign-Up-Here{
+  text-decoration: none;
+  border:1px solid Black;
+padding:10px 30px;
+  margin-top:20px;
+  color: var(--black);
+  /* text-align: center; */
+  border-radius: 8px;
+  font-weight: 600;
+
+}
+
 @media only screen and (max-width:1000px) {
   .hero h1 {
     top: 30%;

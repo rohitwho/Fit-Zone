@@ -7,12 +7,82 @@
   --ff-Primary: Raleway, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  font-family:var(--ff-Primary);
+  transition: ease-in-out 200ms;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* @media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+} */
+  /* *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  } */
 body {
  
   color: #555;
@@ -35,7 +105,7 @@ h1 {
 
 .BMI-card {
   font-family:var(--ff-Primary);
-  background-color: #fff;
+  background-color:var(--navFont);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 10px;
@@ -45,7 +115,7 @@ h1 {
   /* background-image: url("https://img.freepik.com/vetores-gratis/design-de-fundo-escuro-abstrato-luxo-linhas-douradas_1017-24789.jpg?w=1380&t=st=1682265346~exp=1682265946~hmac=d53720df9baf042f77c5113c6c7edf77c66802069907777aa6ce4dc7d743563c"); */
 
   /* padding-top: 70px; */
-  font-size: 18;
+  font-size: 18px;
 }
 
 
@@ -81,7 +151,7 @@ input {
 
 select {
   padding: 10px;
-  margin-right: 10px;
+  margin-inline: 10px;
   width: 80px;
   border: none;
   border-radius: 5px;
@@ -97,17 +167,7 @@ select {
   background-color: var(--navFont);
 }
 
-button {
-  padding: 8px 20px;
-  margin-top: 20px;
-  font-size: 18px;
-  
-  border: 1px solid var(--navFont);
-  border-radius: 5px;
-  background:transparent;
-  color: var(--navFont);
-  cursor: pointer;
-}
+
 
 #result {
   margin-top: 20px;
@@ -142,20 +202,19 @@ button {
 
 .gender-picker .gender-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   border: 1px solid var(--navFont);
   margin-right: 10px;
   position: relative;
   top: 1px;
-  color: var(--black);
+
 
 }
 
 .gender-picker input[type="radio"]:checked + label .gender-icon {
-  background-color: var(--black);
-  border-color: var(--navFont);
+  
   color: var(--navFont);
   background-color: var(--navFont);
 }
@@ -239,13 +298,13 @@ button {
 
   label {
 
-    font-size: 24px;
+    font-size: 18px;
 
   }
 
   .BMI-container h1 {
 
-    font-size: 38px;
+    font-size: 24px;
   
 
   }
@@ -295,7 +354,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
   }
 
@@ -427,7 +486,7 @@ button {
 
   .BMI-container h1 {
 
-    font-size: 20px;
+    font-size: 18px;
   
 
   }
