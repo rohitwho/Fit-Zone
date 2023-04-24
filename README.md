@@ -52,17 +52,17 @@ THEN I am redirected to a page with the calculator to input my gender and height
 
 ## Contributors
 
-Rohit Nayer - GitHub username
-(Link to gitHub Page)
+Rohit Nayer - rohitwho
+(Link: https://github.com/rohitwho)
 
 Muhammad Atrach - ThatOneMHMD
 (Link: https://github.com/ThatOneMHMD)
 
-Melanie Wang - GitHub username
-(Link to gitHub Page)
+Melanie Wang - melwang1
+(Link: https://github.com/melwang1)
 
-Andy Nguyen - GitHub username
-(Link to gitHub Page)
+Andy Nguyen - angyn3
+(Link: https://github.com/angyn3)
 
-Boris Cabrera - GitHub username
-(Link to gitHub Page)
+Boris Cabrera - boro101094
+(Link: https://github.com/boro101094)
