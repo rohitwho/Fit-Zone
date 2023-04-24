@@ -4,6 +4,7 @@
   --firstLetter: hsl(43, 78%, 72%);
   --black: hsl(0, 0%, 0%);
   --yellow: yellow;
+  --ff-Primary: Raleway, sans-serif;
 }
 
 * {
@@ -13,44 +14,47 @@
 }
 
 body {
-  background-color: #f7f7f7;
+ 
   color: #555;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 
 .BMI-container {
-  margin: 0 auto;
+display:flex;
+justify-content: center;
+
   padding: 20px;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: bold;
+ 
 }
 
 .BMI-card {
-  font-family: sans-serif;
+  font-family:var(--ff-Primary);
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 20px;
-  color: var(--yellow);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--navFont);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background-image: url("https://img.freepik.com/vetores-gratis/design-de-fundo-escuro-abstrato-luxo-linhas-douradas_1017-24789.jpg?w=1380&t=st=1682265346~exp=1682265946~hmac=d53720df9baf042f77c5113c6c7edf77c66802069907777aa6ce4dc7d743563c");
-  background-size: cover;
-  background-position: center;
-  padding-top: 70px;
-  font-size: 24px;
+  background-color: var(--navBack);
+  /* background-image: url("https://img.freepik.com/vetores-gratis/design-de-fundo-escuro-abstrato-luxo-linhas-douradas_1017-24789.jpg?w=1380&t=st=1682265346~exp=1682265946~hmac=d53720df9baf042f77c5113c6c7edf77c66802069907777aa6ce4dc7d743563c"); */
+
+  /* padding-top: 70px; */
+  font-size: 18;
 }
 
 
 .BMI-form {
   display: flex;
   flex-direction: column;
+  justify-content:center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .input-group {
@@ -61,18 +65,18 @@ h1 {
 
 label {
   margin-right: 10px;
-  font-weight: bold;
+
   font-size: 18px;
 }
 
 input {
-  padding: 10px;
+  padding: 6px;
   margin-right: 10px;
-  width: 100px;
+  width: 200px;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  
 }
 
 select {
@@ -82,37 +86,37 @@ select {
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
+  
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: right 5px center;
+  
   color: var(--black);
-  background-color: var(--yellow);
+  background-color: var(--navFont);
 }
 
 button {
-  padding: 10px 20px;
+  padding: 8px 20px;
   margin-top: 20px;
   font-size: 18px;
-  font-weight: bold;
-  border: none;
+  
+  border: 1px solid var(--navFont);
   border-radius: 5px;
-  background-color: var(--yellow);
-  color: var(--black);
+  background:transparent;
+  color: var(--navFont);
   cursor: pointer;
 }
 
 #result {
   margin-top: 20px;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 18px;
+
 }
 
 #result p {
-  color: var(--yellow);
+  color: var(--navFont);
 }
 
 .gender-container {
@@ -141,7 +145,7 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px solid var(--firstLetter);
+  border: 1px solid var(--navFont);
   margin-right: 10px;
   position: relative;
   top: 1px;
@@ -151,14 +155,14 @@ button {
 
 .gender-picker input[type="radio"]:checked + label .gender-icon {
   background-color: var(--black);
-  border-color: var(--firstLetter);
-  color: var(--yellow);
-  background-color: var(--firstLetter);
+  border-color: var(--navFont);
+  color: var(--navFont);
+  background-color: var(--navFont);
 }
 
 .gender-picker .gender-label {
   font-size: 16px;
-  color: var(--yellow);
+  color:var(--navFont);
 }
 
 .gender-picker label {
@@ -170,10 +174,16 @@ button {
 
 
 .BMI-hero{
-  background-image: url("http://127.0.0.1:5502/images/Background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background-image: url("http://127.0.0.1:5502/images/Background.jpg"); */
   background-size: cover;
   background-position: center;
-  height: 100vh;
+
+  width:100%;
 
 }
 
@@ -188,7 +198,7 @@ button {
 }
 
 .hero h1 {
-  font-size: 2.2rem;
+  font-size: 24px;
   position: absolute;
   color: var(--navFont);
   top: calc(200px - 175px);
@@ -204,7 +214,7 @@ button {
   border: none;
   border-radius: 1px;
   font-size: 14px;
-  font-weight: bold;
+
 }
 
 .signup {
@@ -236,7 +246,7 @@ button {
   .BMI-container h1 {
 
     font-size: 38px;
-    font-weight: bold;
+  
 
   }
 
@@ -273,7 +283,7 @@ button {
   .BMI-container h1 {
 
     font-size: 28px;
-    font-weight: bold;
+  
 
   }
 
@@ -354,7 +364,7 @@ button {
   .BMI-container h1 {
 
     font-size: 24px;
-    font-weight: bold;  
+    
 
   }
 
@@ -418,7 +428,7 @@ button {
   .BMI-container h1 {
 
     font-size: 20px;
-    font-weight: bold;
+  
 
   }
 
@@ -514,7 +524,7 @@ button {
   .BMI-container h1 {
 
     font-size: 18px;
-    font-weight: bold;
+  
 
   }
 
