@@ -1,18 +1,26 @@
-# Fit-Zone
+# FitZone
 
-LIVE URL:
+## LIVE URL
 
 https://rohitwho.github.io/Fit-Zone/
 
-User Story:
+## Description
 
-As a user, I want to explore different types of workouts specifying muscle groups being trained 
+This is the official page for FitZone, the best workout guide. When the LIVE URL is clicked, the Home Page will appear displaying Our Mission in FitZone, our services such as workout guides and various fitness calculators, a word about us, and much more! Additionally, when the "About" link (in nav or footer) is clicked, the page will move the user to the corresponding section. This also applies to the rest of the tabs, aside from some that would transfer the user to a different page that correspond to the link. Moreover, when the FitZone icone to the left of the nav bar to the Home link are clicked, the user will be moved back to the home/ landing page. Lastly, when the user decides to brows our services by clicking on the workout guides or the various fitness calculators, they will be trasnferred to the corresponding pages!
 
-As a user, I want to have the option to click on a workout and see a brief description
+## Screenshots of official FitZone website
 
-As a user, I want to check my body mass index (BMI) to understand my body fat mass, and weight category
+-Enter ScreenShot links HERE!-
 
-Acceptance Criteria:
+## User Story
+
+- As a user, I want to explore different types of workouts specifying muscle groups being trained 
+
+- As a user, I want to have the option to click on a workout and see a brief description
+
+- As a user, I want to check my body mass index (BMI) to understand my body fat mass, and weight category
+
+## Acceptance Criteria
 
 WHEN I open the website
 THEN I see a landing page that includes a mission statement and presented with the “Get Workout” button
@@ -38,10 +46,19 @@ THEN I am redirected to a page with a Body Fat Calculator to input my weight and
 WHEN I click the “Learn More” button for the Ideal Weight Calculator
 THEN I am redirected to a page with the calculator to input my gender and height to receive an output of an ideal weight
 
+## Contributors
 
-CONTRIBUTORS
-Rohit Nayer,
-Melanie Wang, 
-Andy Nguyen,
-Muhammad Atrach,
-Boris Cabrera 
+Rohit Nayer - GitHub username
+(Link to gitHub Page)
+
+Muhammad Atrach - ThatOneMHMD
+(Link: https://github.com/ThatOneMHMD)
+
+Melanie Wang - GitHub username
+(Link to gitHub Page)
+
+Andy Nguyen - GitHub username
+(Link to gitHub Page)
+
+Boris Cabrera - GitHub username
+(Link to gitHub Page)

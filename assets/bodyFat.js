@@ -342,8 +342,8 @@ function calculateBodyFat() {
             var kgLb = "kg"
 
             if (weightUnit === "lb") {
-                bodyFatMass = bodyFatMass * 0.453592;
-                leanBodyMass = leanBodyMass * 0.453592;
+                bodyFatMass = bodyFatMass * 2.20462;
+                leanBodyMass = leanBodyMass * 2.20462;
                 var kgLb = "lb";
             }
 
