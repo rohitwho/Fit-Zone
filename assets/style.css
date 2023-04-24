@@ -1100,9 +1100,11 @@ label {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
- 
-
 }
+  .Coming-Soon h2 {
+    text-decoration: underline;
+    }
+
 .Coming-Soon{
   display: flex;
   background-color: hsl(220.41deg 19.37% 50.39%);
@@ -1113,13 +1115,13 @@ label {
 
   border-radius: 10px;
   margin:50px;  
-  width:50%;
+  width:47%;
 
  
 }
 .Hour-Glass{
   width:6rem;
-  margin:40px;
+  margin:30px;
   aspect-ratio: 1;
 }
 .Soon-Text{
@@ -1135,7 +1137,7 @@ font-weight: 600;
   text-decoration: none;
   border:1px solid Black;
 padding:10px 30px;
-  margin-top:20px;
+  margin-top:30px;
   color: var(--black);
   /* text-align: center; */
   border-radius: 8px;

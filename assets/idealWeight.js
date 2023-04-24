@@ -116,6 +116,10 @@ function calculateBMI() {
 
             if (weightUnit === "lb") {
                 var kgLb = "lb";
+                devine = devine * 2.20462;
+                hamwi = hamwi * 2.20462;
+                miller = miller * 2.20462;
+                robinson = robinson * 2.20462;
             }
 
 
