@@ -43,18 +43,7 @@ function getWorkout() {
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-let submitForm = document.querySelector(".Submit-Form");
-function thankYou(){
-    let contactForm = document.querySelector(".container");
-    let thankYouForm = document. querySelector(".Thank-You-Modal");
 
-    contactForm.setAttribute("data-visible", false);
-    thankYouForm.setAttribute("data-visible", true);
-}
-submitForm.addEventListener("click", (event) => {
-    event.preventDefault(); 
-    thankYou(); 
-});
 
     
 
@@ -205,5 +194,16 @@ fetch('https://ny-times-news-titles-and-urls.p.rapidapi.com/news', newsOptions)
     })
 
 
-
+    let submitForm = document.querySelector(".Submit-Form");
+    function thankYou(){
+        let contactForm = document.querySelector(".container");
+        let thankYouForm = document. querySelector(".Thank-You-Modal");
+    
+        contactForm.setAttribute("data-visible", false);
+        thankYouForm.setAttribute("data-visible", true);
+    }
+    submitForm.addEventListener("click", (event) => {
+        event.preventDefault(); 
+        thankYou(); 
+    });
 
