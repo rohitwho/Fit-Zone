@@ -186,17 +186,25 @@ h1::first-letter {
   color: var(--firstLetter);
 
 }
+h3::first-letter {
+  color: var(--firstLetter);
+
+}
+
+h2::first-letter {
+  color: var(--firstLetter);
+
+}
 
 .Logo-Main {
   font-size: 2.3rem;
-  color: var(--navFont);
+  color: var(--firstLetter);
   margin-inline: 10px;
   text-decoration: none;
 
 }
-.Logo-Main::first-letter {
-  color: var(--firstLetter);
-
+.Logo-Main:first-letter {
+  color: var(--navBack);
 }
 
 
@@ -450,6 +458,8 @@ border:none;
 
 .Get-workout {
   position: relative;
+  text-decoration: none;
+  transition: ease-in-out 600ms;
   margin: 10px;
   background: transparent;
   border: 1px solid var(--navFont);
@@ -1096,7 +1106,7 @@ label {
 .Coming-Soon{
   display: flex;
   background-color: hsl(220.41deg 19.37% 50.39%);
-  height:50vh;
+  
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
