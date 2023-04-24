@@ -23,7 +23,7 @@ THEN I am directed to that section on the page
 WHEN I click on the "Contact Us" in the navagation bar
 THEN I redirected to another page to fill out a form
 
-WHEN I click on the "Trainers" in the navigation bar
+WHEN I click on the "Trainers" and "My FitZone" in the navigation bar
 THEN I am redirected to another page that displays a Coming soon message for future endeavors 
 
 WHEN I click on the “Get Workout” button for the “Upper”, “Lower”, and “Compound Lifts” 
@@ -40,8 +40,8 @@ THEN I am redirected to a page with the calculator to input my gender and height
 
 
 CONTRIBUTORS
-Rohit Nayer
-Melanie Wang 
-Andy Nguyen
-Muhammad Atrach
+Rohit Nayer,
+Melanie Wang, 
+Andy Nguyen,
+Muhammad Atrach,
 Boris Cabrera 
